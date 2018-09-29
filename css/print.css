@@ -1,0 +1,199 @@
+root
+{
+    font-family: verdana, sans-serif;
+    font-size: 10pt;
+
+    margin: 0;
+    padding: 0;
+
+    color: #000;
+}
+
+@page
+{
+    margin: 6mm;
+}
+
+@media print
+{
+    .container
+    {
+        display: grid;
+        height: 100vh;
+        margin: 0 auto;
+
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto auto auto auto auto auto auto 50px;
+        grid-row-gap: 5px;
+        grid-template-areas: 'header header header header header header header header header header header header' 'onethirdContent onethirdContent onethirdContent onethirdContent onethirdContent onethirdContent onethirdContent onethirdContent onethirdContent onethirdContent onethirdContent onethirdContent' 'twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar' 'sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar' 'content content content content content content content content content content content content' 'flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content' 'flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02'
+        'flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03' 'footer footer footer footer footer footer footer footer footer footer footer footer';
+    }
+    #break
+    {
+        page-break-after: always;
+    }
+
+    .container
+    {
+        margin: 0 auto;
+    }
+
+    h1
+    {
+        margin: 0;
+    }
+
+    h2
+    {
+        margin: 0;
+    }
+
+    .pagefloat
+    {
+        float: left;clear: right;
+    }
+
+    p
+    {
+        padding: 10px;
+
+        border: 1px solid black;
+
+    }
+
+    header
+    {
+
+        padding: 5px;
+
+        background-color: transparent;
+        background-image: url(../images/header1.jpg);
+
+        grid-area: header;
+    }
+
+    nav
+    {
+
+        padding: 5px;
+
+        grid-area: nav;
+    }
+
+    aside
+    {
+        display: none;
+
+        padding: 5px;
+
+        grid-area: sidebar;
+    }
+
+    section
+    {
+
+        padding: 5px;
+
+        grid-area: content;
+    }
+
+    .twoThirds
+    {
+        display: none;
+
+        grid-area: onethirdContent;
+    }
+
+    .oneThird
+    {
+        grid-area: twothirdSidebar;
+    }
+
+    img
+    {
+        margin-right: 10px;
+    }
+
+    .flex_container_4_column
+    {
+        display: flex;
+        flex-direction: column;
+
+        height: auto;
+
+        grid-area: flex_content_03;
+        align-items: stretch;
+    }
+
+
+
+    .flex_container_4_column > section
+    {
+        margin-right: 2px;
+        margin-left: 2px;
+        padding: 15px;
+
+        text-align: justify;
+        /*background-color: #38e316;*/
+
+        flex: 1;
+    }
+
+    .flex_container_3_column
+    {
+        display: flex;
+        flex-direction: row;
+
+        height: auto;
+
+        grid-area: flex_content;
+        align-items: stretch;
+    }
+
+    .flex_container_3_column > section
+    {
+        margin-right: 2px;
+        margin-left: 2px;
+        padding: 15px;
+
+        text-align: justify;
+        /*background-color: crimson;*/
+
+        flex: 1;
+    }
+
+    .flex_container_2_column
+    {
+        display: flex;
+        flex-direction: row;
+
+        height: auto;
+
+        grid-area: flex_content_02;
+        align-items: stretch;
+    }
+
+    .flex_container_2_column > section
+    {
+        margin-right: 2px;
+        margin-left: 2px;
+        padding: 15px;
+
+        text-align: justify;
+        /*background-color: darkorange;*/
+
+        flex: 1;
+    }
+
+    footer
+    {
+
+        padding: 5px;
+
+        text-align: center;
+
+        grid-area: footer;
+    }
+
+
+}
