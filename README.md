@@ -8,8 +8,6 @@ A 12 column __Css Grid__, __Flexbox__ website template.
 * visit [CanIUse](http:///www.caniuse.com) for more information on browser support
 ---
 CC Attribution-ShareAlike 4.0 International
-To add a CC BY-SA License to your project, just add the following to your README.md. You should also copy the corresponding license text file and rename it to LICENSE.
-
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
 This work is licensed under a
